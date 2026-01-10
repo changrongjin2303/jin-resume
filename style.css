@@ -259,8 +259,9 @@ body {
 
 .project-gallery img {
     width: 100%;
-    height: 200px; /* Fixed height for alignment */
-    object-fit: cover; /* Crop to fit */
+    height: auto; /* Auto height to show full image */
+    max-height: 600px; /* Maximum height to prevent too large */
+    object-fit: contain; /* Show full image without cropping */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     cursor: pointer;
